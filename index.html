@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="schedule.js"></script>
+
+</head>
+<body background="https://images.unsplash.com/16/unsplash_5263607dd1bfc_2.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+    <div style="background-color: gold !important" class="jumbotron">
+            <h1 class="display-4">How to Train Your Schedule</h1>
+            
+    </div>       
+    <div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Current Train Schedule</h3>
+					</div>
+					<div class="panel-body">
+						<div id="content">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Update</th>
+										<th>Train Name</th>
+										<th>Destination</th>
+										<th>Frequency </th>
+										<th>Next Arrival</th>
+										<th>Minutes Away</th>
+										<th>Remove</th>
+									</tr>
+								</thead>
+								<tbody id="tableContent">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+   
+		<div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Add Train</h3></div>
+                        <div class="panel-body">
+                            <form id="formID">
+                              <div class="form-group">
+                                <label for="trainName">Train Name</label>
+                                <input type="text" class="form-control" id="trainName" aria-describedby="trainName" placeholder="">
+                              </div>
+                              <div class="form-group">
+                                <label for="trainDestination">Destination</label>
+                                <input type="text" class="form-control" id="trainDestination" aria-describedby="trainDestination" placeholder="">
+                              </div>
+                              <div class="form-group">
+                                <label for="firstTrainTime">First Train Time </label>
+                                <input type="text" class="form-control" id="firstTrainTime" aria-describedby="firstTrainTime" placeholder="">
+                              </div>
+                              <div class="form-group">
+                                <label for="frequency">Frequency (min)</label>
+                                <input type="number" class="form-control" id="frequency" aria-describedby="frequency" placeholder="">
+                              </div>
+                              <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </body>
+
+    </html>

@@ -1,0 +1,13 @@
+.jumbotron{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    opacity: 0.90;
+    font: bolder;
+}
+.row{
+    margin-left: 3%;
+    margin-right: 3%;
+}
